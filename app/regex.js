@@ -2,7 +2,10 @@ exports = (typeof window === 'undefined') ? global : window;
 
 exports.regexAnswers = {
   containsNumber : function(str) {
-
+    if ( str.match(/[0-9]/m) ) {
+      return true;
+    }
+    return false;
   },
 
   containsRepeatingLetter : function(str) {

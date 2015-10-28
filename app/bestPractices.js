@@ -16,13 +16,16 @@ exports.bestPracticesAnswers = {
   },
 
   functions : function(flag) {
-    if (flag) {
-      function getValue() { return 'a'; }
-    } else {
-      function getValue() { return 'b'; }
-    }
 
-    return getValue();
+
+    if (flag) { 
+      return 'a'; 
+    } else { 
+      return 'b'; 
+    }
+    
+
+ 
   },
 
   parseInt : function(num) {
